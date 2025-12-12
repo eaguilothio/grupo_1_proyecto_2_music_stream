@@ -3,14 +3,6 @@
 
 Este documento explica las librerías utilizadas en el proyecto y su propósito, diferenciando entre las que vienen incluidas con Python y las que requieren instalación adicional.
 
----
-
-## ────────────────────────────────────────────────
-
-## 1. 📦 Cargar librerías necesarias
-
-## ────────────────────────────────────────────────
-
 ### 🔹 Librerías de la Biblioteca Estándar de Python
 
 Estas librerías vienen instaladas por defecto con Python.
