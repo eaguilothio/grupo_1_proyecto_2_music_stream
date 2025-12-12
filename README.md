@@ -46,6 +46,9 @@ Trabajamos con **Agile + Scrum**, con roles:
 - **Equipo de desarrollo:** construye y valida el análisis  
 
 ---
-
 ## 💡 Conclusión
-Analizar los datos de Spotify y Last.fm nos permite ver cómo evolucionó la música entre 2010 y 2018. En este período, la música empezó a consolidarse en plataformas digitales, a diferencia de años anteriores, mientras que los años posteriores, especialmente tras la pandemia, muestran cambios claros en hábitos de escucha y popularidad de artistas.
+
+- **Evolución 2010–2018:** Analizar los datos de Spotify y Last.fm nos permite ver cómo cambió la música en esta década.  
+- **Consolidación digital:** Durante este período, la música comenzó a asentarse en plataformas digitales, a diferencia de años anteriores.  
+- **Cambios posteriores:** Tras la pandemia, los hábitos de escucha y la popularidad de artistas muestran transformaciones claras.  
+
