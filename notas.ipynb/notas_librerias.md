@@ -3,6 +3,8 @@
 
 Este documento explica las librerías utilizadas en el proyecto y su propósito, diferenciando entre las que vienen incluidas con Python y las que requieren instalación adicional.
 
+---
+
 ### 🔹 Librerías de la Biblioteca Estándar de Python
 
 Estas librerías vienen instaladas por defecto con Python.
@@ -71,8 +73,8 @@ Maneja la autenticación con Spotify mediante **Client Credentials** (OAuth 2.0)
 * Requiere `Client ID` y `Client Secret`
 * **No los escribas nunca directamente en el código**
 * Lo seguro es cargarlos desde variables de entorno (`dotenv`)
+* Ideal para proyectos donde necesitas acceder a datos públicos de Spotify.
 
-Ideal para proyectos donde necesitas acceder a datos públicos de Spotify.
 ---
 
 ## ✅ Resumen
