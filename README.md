@@ -1,54 +1,13 @@
-# grupo_1_proyecto_2_music_stream
+# MusicStream – README de Mejora Individual Postevaluación
 
-# 🎶 MusicStream
-*Análisis musical de 2010 a 2018 con datos reales de Spotify y Last.fm*
+Esta versión refleja **mejoras individuales posteriores a la evaluación**, centradas en claridad, seguridad y buenas prácticas. El proyecto analiza la música entre **2010 y 2020** (ampliando el periodo original hasta 2018), enfocándose en los géneros **Country, Latin, Jazz y Rock**, usando datos de **Spotify** y **Last.fm**.
 
-> Proyecto del Módulo 2 realizado por **5 mujeres apasionadas por la música y los datos**.  
-> Objetivo: hacer un **análisis de datos** de cómo evolucionaron géneros, artistas y canciones entre 2010 y 2018.
+## Principales mejoras individuales
 
----
+- **Funciones seguras:** `spotify_search_seguro` y `spotify_album_tracks_seguro` con manejo de errores y reintentos automáticos.
+- **Integración de datos:** los datos se organizan en **dos tablas** (`canciones` y `datos_lastfm`) dentro de MySQL, asegurando información consistente y completa.
+- **Consultas y gráficos optimizados:** visualizaciones más claras y consultas eficientes, facilitando la interpretación de tendencias y comparaciones.
+- **Código limpio y mantenible:** reorganización de notebooks en fases (1, 2, 3), con funciones bien estructuradas, nombres claros y procesos documentados, asegurando que el código sea fácil de entender, reutilizar y mantener.
 
-## 🎯 Objetivo
-Analizar la **evolución de la música** entre 2010 y 2018 a partir de datos de **Spotify** y **Last.fm**, centrándonos en **"country","latin","jazz","rock"**.  
+- **Pendiente:** integrar los CSV de 2018 y 2020 para completar la fase de postevaluación.
 
-Buscamos mostrar de manera clara cómo evolucionaron los géneros, cuáles artistas se mantuvieron activos a lo largo de los años y qué canciones o álbumes alcanzaron mayor popularidad.
-
----
-
-## 🛠️ Cómo lo hicimos
-
-### 1. Extracción de datos 
-
-## Datos obtenidos
-- **Rango temporal:** 2010–2018 (cada 2 años: 2010, 2012, 2014, 2016, 2018)  
-- **Géneros musicales:** country, latin, jazz, rock  
-
-## Plataformas y campos
-- **Spotify API:** artista, género, tipo (canción o álbum), nombre, año, cantidad de canciones  
-- **Last.fm API:** biografía, número de oyentes (*listeners*), reproducciones (*playcount*), artistas similares  
-
-## Procesamiento
-- Se genera un archivo **CSV por año**, integrando los datos de Spotify y Last.fm  
-- La información se organiza de manera **coherente y consistente**, facilitando su análisis y posterior carga en la base de datos
-
----
-
-### 2. Almacenamiento de la información
-## Base de datos
-- Se utiliza una **base de datos relacional (SQL)** para un manejo estructurado y eficiente de la información.
-## Tablas
-- **Tablas principales e intermedias:** los datos se organizan en tablas base y tablas de relación, facilitando consultas, análisis y mantenimiento.
-## Inserción de datos
-- Los datos recolectados se insertan de manera **ordenada y coherente**, asegurando la **integridad y consistencia** de la información.
-
----
-
-### 3. Análisis y conclusiones
-- Consultas SQL: análisis de los datos para extraer conclusiones sobre tendencias musicales, popularidad de artistas, patrones de consumo y relaciones entre producción y recepción.
-
----
-
-## 🧠 Metodología
-Trabajamos con **Agile + Scrum**, con roles:  
-- **Scrum Master:** facilita el flujo  
-- **Equipo de desarrollo:** construye y valida el análisis  
