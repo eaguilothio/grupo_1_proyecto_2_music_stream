@@ -12,6 +12,6 @@ El proyecto analiza la música entre **2010 y 2020** (ampliando el periodo origi
 - **Código limpio y mantenible:** reorganización de notebooks en fases (1, 2, 3), con funciones estructuradas y procesos documentados para facilitar su comprensión y mantenimiento.
 
 ## Pendiente
-- Integrar los CSV correspondientes a **2018 y 2020** para completar la fase de postevaluación y finalizar el análisis de todos los años.
+- Integrar los CSV correspondientes a **2018 y 2020** y finalizar el análisis de todos los años.
 
 
