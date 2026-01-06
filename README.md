@@ -1,14 +1,13 @@
 # Musicstream 🎵
 
-**Musicstream** es un proyecto de análisis de datos enfocado en la **evolución de la música entre 2010 y 2018**. Utilizando datos extraídos de las APIs de **Spotify** y **Last.fm**, el equipo se ha centrado en analizar cuatro géneros clave: **Country, Latin, Jazz y Rock**.
+**Musicstream** es un proyecto de análisis de datos que busca comprobar si lo que pensamos sobre la música realmente coincide con lo que dicen los números. Entre **2010 y 2018**, la industria ha cambiado por completo, y hemos usado las APIs de **Spotify** y **Last.fm** para entender qué ha pasado con cuatro géneros: **Country, Latin, Jazz y Rock**.
 
-El objetivo principal es visualizar cómo han evolucionado estos géneros, identificar a los artistas más constantes a lo largo del tiempo y determinar qué lanzamientos alcanzaron mayor impacto en términos de popularidad y oyentes.
-
----
+### El valor del proyecto
+El objetivo general es verificar si nuestra cultura musical y nuestras primeras impresiones encajan con los datos reales de oyentes y popularidad. Queremos descubrir si lo que recordamos es una percepción personal basada en nuestra experiencia o si los datos confirman esas tendencias de manera objetiva.
 
 ## 👥 Equipo y Metodología
 
-Este proyecto se ha desarrollado bajo la **Metodología Scrum**, asegurando una entrega iterativa y una comunicación fluida. Para garantizar la integridad del código y facilitar el trabajo colaborativo, hemos implementado un **flujo de trabajo basado en ramas (Git Flow)**, permitiendo que cada funcionalidad o corrección se desarrollara de forma aislada antes de integrarse en la rama principal.
+Para trabajar de manera organizada y eficiente, nos organizamos de la siguient manera:
 
 * **Scrum Master:** Bet Aguiló.
 * **Equipo de Desarrollo:**
@@ -17,76 +16,56 @@ Este proyecto se ha desarrollado bajo la **Metodología Scrum**, asegurando una 
     * Fabiana Britez.
     * Patricia Anaya.
 
----
+## 🛠️ Herramientas utilizadas
 
-## 🛠️ Tecnologías Utilizadas
+Hemos diseñado un sistema para extraer, procesar y almacenar datos con este stack tecnológico:
 
-Para el desarrollo del sistema ETL y el análisis posterior, se han empleado las siguientes herramientas:
+| Herramienta | Función |
+| :--- | :--- |
+| **Python** | Lenguaje principal para toda la lógica del proyecto. |
+| **Spotipy / Requests** | Conexión con las APIs oficiales de Spotify y Last.fm. |
+| **Pandas / NumPy** | Limpieza y tratamiento avanzado de los datos. |
+| **MySQL** | Organización y almacenamiento en base de datos. |
+| **Matplotlib** | Creación de gráficos y visualización de resultados. |
+| **python-dotenv** | Gestión segura de claves y credenciales. |
 
-* **Control de Versiones:** **GitHub** (Gestión de repositorio y flujo de trabajo por ramas).
-* **Lenguaje:** Python 3.x.
-* **Librerías principales:**
-    * `Pandas` y `NumPy`: Para la manipulación y limpieza de datos.
-    * `Spotipy`: Cliente de Python para la API de Spotify.
-    * `Requests`: Para realizar peticiones HTTP a la API de Last.fm.
-    * `MySQL Connector`: Para la gestión e inserción de datos en la base de datos relacional.
-    * `Matplotlib`: Para la generación de visualizaciones de los insights.
-    * `python-dotenv`: Para la gestión segura de credenciales mediante variables de entorno.
 
----
+## 🚀 Estructura del proyecto
 
-## 🚀 Estructura del Proyecto
+El flujo de trabajo se divide en 2 etapas principales:
 
-El flujo de trabajo se divide en los siguientes componentes principales:
+1.  **Obtención de datos (`CODIGO_FINAL.ipynb`)**
+2.  **Análisis (`CONSULTAS_musicstream.ipynb`):** 
 
-1.  **Extracción e Inserción (`CODIGO_FINAL.ipynb`):**
-    * Conexión con las APIs de Spotify y Last.fm.
-    * Proceso de limpieza de datos (manejo de nulos con `numpy.nan` y `None`).
-    * Carga masiva de datos en una base de datos MySQL denominada `musicstream_db`.
+## 📊 ¿Dato o Percepción?
 
-2.  **Análisis y Consultas (`CONSULTAS_musicstream.ipynb`):**
-    * Ejecución de consultas SQL directamente desde Python.
-    * Generación de métricas clave sobre popularidad y producción musical.
+Uno de los puntos más interesantes del análisis fue contrastar nuestras expectativas con la realidad de los datos:
 
-3.  **Datos:**
-    * `TABLA_FINAL.csv`: Dataset consolidado con información de canciones, artistas, álbumes, géneros, años de lanzamiento y número de oyentes.
+> **El hallazgo:** Aunque todas pensábamos que la música **Latina** lideraría el impacto en la era digital, los datos revelaron que el **Rock** mantuvo el liderazgo en términos de oyentes y presencia durante el periodo analizado.
 
----
-
-## 📊 Insights Clave
-
-A través del análisis realizado, el proyecto responde a preguntas estratégicas como:
-* **Artistas Top:** Identificación de los 10 artistas más populares (ej. Radiohead, Nirvana, Red Hot Chili Peppers).
-* **Tendencias:** Géneros que predominaron en lanzamientos durante el periodo analizado.
-* **Producción:** Identificación de los picos y valles en la producción musical por año.
-
----
+Este resultado demuestra que nuestra percepción cultural no siempre coincide con las métricas globales de las plataformas.
 
 ## ⚙️ Configuración
 
-Para replicar este proyecto, asegúrate de configurar tu archivo `.env` basándote en el archivo de ejemplo proporcionado:
+Si quieres replicar el proyecto, solo tienes que crear un archivo llamado `.env` en la raíz con tus credenciales:
 
 ```env
-# --- CREDENCIALES API LAST.FM ---
-# Consíguelas en: https://www.last.fm/api/account/create
-API_KEY_LASTFM=tu_api_key_aqui
-SHARED_SECRET_LASTFM=tu_shared_secret_aqui
+# Claves de Last.fm
+API_KEY_LASTFM=tu_clave_aqui
+SHARED_SECRET_LASTFM=tu_secreto_aqui
 
-# --- CREDENCIALES API SPOTIFY ---
-# Consíguelas en: https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID=tu_client_id_aqui
-SPOTIFY_CLIENT_SECRET=tu_client_secret_aqui
+# Claves de Spotify
+SPOTIFY_CLIENT_ID=tu_id_aqui
+SPOTIFY_CLIENT_SECRET=tu_secreto_aqui
 
-# --- CONFIGURACIÓN BASE DE DATOS MYSQL ---
+# Base de datos
 MYSQL_HOST=localhost
 MYSQL_USER=root
-MYSQL_PASSWORD=tu_contraseña_aqui
-MYSQL_DATABASE=musicstream_db
 
----
 ## 🔹 Actualizaciones del Proyecto – Rama Bet
 
 Una segunda versión del proyecto se encuentra disponible en la rama **Bet**:  
 [Bet – Mejoras y Actualizaciones](https://github.com/eaguilothio/da-project-promo-59-modulo-2-team-1/tree/Bet/proyecto_v2_mejoras_y_actualizaciones)
 
-
+MYSQL_PASSWORD=tu_password
+MYSQL_DATABASE=musicstream_db
