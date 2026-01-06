@@ -61,11 +61,11 @@ SPOTIFY_CLIENT_SECRET=tu_secreto_aqui
 # Base de datos
 MYSQL_HOST=localhost
 MYSQL_USER=root
+MYSQL_PASSWORD=tu_password
+MYSQL_DATABASE=musicstream_db
 
 ## 🔹 Actualizaciones del Proyecto – Rama Bet
 
 Una segunda versión del proyecto se encuentra disponible en la rama **Bet**:  
 [Bet – Mejoras y Actualizaciones](https://github.com/eaguilothio/da-project-promo-59-modulo-2-team-1/tree/Bet/proyecto_v2_mejoras_y_actualizaciones)
 
-MYSQL_PASSWORD=tu_password
-MYSQL_DATABASE=musicstream_db
