@@ -37,7 +37,7 @@ Hemos diseñado un sistema para extraer, procesar y almacenar datos con este sta
 El flujo de trabajo se divide en 2 etapas principales:
 
 1.  **Obtención de datos (`CODIGO_FINAL.ipynb`)**
-2.  **Análisis (`CONSULTAS_musicstream.ipynb`):** 
+2.  **Análisis (`CONSULTAS_musicstream.ipynb`)** 
 
 ## 📊 ¿Dato o Percepción?
 
