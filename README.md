@@ -84,3 +84,11 @@ MYSQL_HOST=localhost
 MYSQL_USER=root
 MYSQL_PASSWORD=tu_contraseña_aqui
 MYSQL_DATABASE=musicstream_db
+
+---
+## 🔹 Actualizaciones del Proyecto – Rama Bet
+
+Se encuentra disponible una versión actualizada del proyecto en la rama **Bet** (`proyecto_v2_mejoras_y_actualizaciones`).  
+Esta versión incluye mejoras enfocadas en la **claridad, seguridad y buenas prácticas**, como funciones con manejo de errores, optimización de consultas y gráficos, y reorganización de notebooks para facilitar la comprensión y mantenimiento.  
+
+Para explorar o probar estas mejoras, se puede acceder a la rama [Bet – Mejoras y Actualizaciones](https://github.com/eaguilothio/da-project-promo-59-modulo-2-team-1/tree/Bet/proyecto_v2_mejoras_y_actualizaciones).
