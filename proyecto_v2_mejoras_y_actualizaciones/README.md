@@ -1,8 +1,10 @@
-# MusicStream – README de Mejora Individual Postevaluación
+# MusicStream – README de Mejora Individual 
 
-Esta versión refleja **mejoras individuales posteriores a la evaluación**, centradas en claridad, seguridad y buenas prácticas. El proyecto analiza la música entre **2010 y 2020** (ampliando el periodo original hasta 2018), considerando los años **2010, 2012, 2014, 2016, 2018 y 2020**, y enfocándose en los géneros **Country, Latin, Jazz y Rock**, usando datos de **Spotify** y **Last.fm**.
+Esta versión incluye **mejoras desarrolladas y supervisadas por Bet**, realizadas tras la revisión grupal, enfocadas en claridad, seguridad y buenas prácticas. 
 
-## Principales mejoras individuales
+El proyecto analiza la música entre **2010 y 2020** (ampliando el periodo original de 2010 a 2018), considerando los años **2010, 2012, 2014, 2016, 2018 y 2020**, y los géneros **Country, Latin, Jazz y Rock**, utilizando datos de **Spotify** y **Last.fm**.
+
+## Principales mejoras 
 
 - **Funciones seguras:** `spotify_search_seguro` y `spotify_album_tracks_seguro` con manejo de errores y reintentos automáticos.
 - **Integración de datos:** los datos se organizan en **dos tablas** (`canciones` y `datos_lastfm`) dentro de MySQL, asegurando información consistente y completa.
@@ -10,7 +12,6 @@ Esta versión refleja **mejoras individuales posteriores a la evaluación**, cen
 - **Código limpio y mantenible:** reorganización de notebooks en fases (1, 2, 3), con funciones estructuradas y procesos documentados para facilitar su comprensión y mantenimiento.
 
 ## Pendiente
-
 - Integrar los CSV correspondientes a **2018 y 2020** para completar la fase de postevaluación y finalizar el análisis de todos los años.
 
 
